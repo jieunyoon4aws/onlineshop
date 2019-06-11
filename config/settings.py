@@ -99,9 +99,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'onlineshop',
         'USER':'onlineshop',
-        'PASSWORD':'jieun0803',
+        'PASSWORD':'',
          # aws db의 엔드포인트 값. 내 컴 ip 할꺼면 127.0.0.1 하면 됨
-        'HOST':'onlineshop.cagbt7vtjbph.ap-northeast-2.rds.amazonaws.com',
+        'HOST':'onlineshop..ap-northeast-2.rds.amazonaws.com',
         'PORT':'3306',
         'OPTIONS' : {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES,NO_ZERO_DATE,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO'",
@@ -148,8 +148,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # aws의 버킷에서 값 확인
-AWS_ACCESS_KEY_ID = 'AKIARD7BXERJXG7YMQHS'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
 AWS_REGION = 'Asia Pacific (Seoul)'
 AWS_STORAGE_BUCKET_NAME = 'django-onlineshop-jieun'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % (AWS_STORAGE_BUCKET_NAME)
